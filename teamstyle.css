@@ -1,0 +1,92 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-align: end;
+    list-style: none;
+    color: aliceblue;
+    font-size: large;
+}
+footer {
+    background-color: #081933;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: normal;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.social-icon {
+    color: aliceblue;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f1c40f; 
+}
+
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.teacher-details {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #081933;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+}
+.teacher-details img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.added-courses {
+    margin-top: 20px;
+}
+.remove-btn {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}

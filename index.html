@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style> 
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+           
+            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+            
+        }
+        nav{ 
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+            height: 50px;
+            background-color: #081933;
+            position: fixed;
+            padding-right: 20px;
+        } 
+        nav a{
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: aliceblue;
+           
+            font-size: larger;
+            font-weight: bolder;
+        } 
+        @font-face {
+            font-family: myFont;
+            src: url(./Whisper/Whisper-Regular.ttf);
+        } 
+        .logo{
+            font-family: myFont;
+            font-size: 40px;
+            font-weight: bolder;
+            color: aliceblue;
+        }
+        .advs{
+            display: flex;
+            justify-content: center;
+           
+           
+        }
+        .advs img{
+            width: 50%;
+            height: 250px;
+            margin-top: 60px;
+        }
+        
+        #div1{
+            background-image: url(./main.PNG);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            padding-left: 50px;
+            padding-top: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: aliceblue;
+            font-size: 30px;
+
+        
+        }
+        select{
+           
+           margin-top: 50px;
+           margin-bottom: 50px;
+           
+           text-align: center;
+           background-color: orangered;
+           border-radius: 20px;
+           color: aliceblue;
+           font-size: larger;
+           width: 300px;
+            padding: 5px;
+             border-radius: 20px;
+             border: 1px solid #ddd;
+       } 
+       footer {
+            background-color: #081933;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+            font-weight: bolder;
+            }
+
+            .footer-content p {
+                margin: 5px 0;
+            }
+
+            .footer-links {
+                margin: 10px 0;
+            }
+
+            .footer-links a {
+                color: aliceblue;
+                text-decoration: none;
+                margin: 0 10px;
+                font-weight: normal;
+            }
+
+            .footer-links a:hover {
+                text-decoration: underline;
+            }
+
+            .social-links {
+                margin: 10px 0;
+            }
+
+            .social-icon {
+                color: aliceblue;
+                margin: 0 10px;
+                font-size: 20px;
+                text-decoration: none;
+            }
+
+            .social-icon:hover {
+                color: #f1c40f; 
+            }
+
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        } 
+       
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+       <div> <p class="logo">Let's Learn</p></div>
+        <div style="display: flex; gap: 20px;">
+            <a href="#">Home</a>
+            <a onclick="goToform()" href="#">login</a>
+            <a href="./team.html">more data</a>
+        </div>
+        
+    </nav>
+    <main>
+        <div class="advs">
+            <img id="advImg" src="./lap1.PNG" alt="">
+        </div>  
+        
+             <div  class="col-12 d-flex flex-column align-items-center">
+                
+                <div class="col-12" id="div1">
+                    <h1>Hey!</h1>
+                    <p >Welcome to our page.<br> Now you can choose your path and start...</p>
+                   
+                    <select name="" id="sel">
+                        <option class="op1" value="select cource" disabled selected>Select Course</option>
+                        <option class="op" value="English">English</option>
+                        <option class="op" value="Math">Math</option>
+                        <option class="op" value="Programming">Programming</option>
+                        <option class="op" value="Science">Science</option>
+                    </select>
+                </div>
+
+                <div class="col-12 d-flex" style="font-size: larger; color: aliceblue; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <div class="col-3 d-flex justify-content-center align-items-center" style="background-color: #081933; height: 200px; flex-direction: column;">
+                        <i class="fas fa-laptop-code fa-3x"></i>
+                        <p>programming </p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center" style="background-color: orangered; height: 200px; flex-direction: column;">
+                        <i class="fas fa-square-root-alt fa-3x"></i>
+                        <p> math</p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center" style="background-color: #081933; height: 200px; flex-direction: column;">
+                        <i class="fas fa-book fa-3x"></i>
+                        <p>English </p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center" style="background-color: orangered; height: 200px; flex-direction: column;">
+                        <i class="fas fa-flask fa-3x"></i>
+                        <p>Science </p>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+            <div class="col-12 d-flex" id="lolo" style="padding: 50px; justify-content: space-around; flex-wrap: wrap; background-color: #f5f5f5;">
+                <div class="course-box" style="width: 22%; background-color: #081933; color: aliceblue; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+                    <img src="./programming.png" alt="Programming Course" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                    <h2 style="font-size: 24px; margin-top: 15px;">Programming Course</h2>
+                    <p style="font-size: 18px;">Start your journey in programming with the latest technologies and best practices.</p>
+                </div>
+                <div class="course-box" style="width: 22%; background-color: #081933; color: aliceblue; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+                    <img src="./math.png" alt="Math Course" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                    <h2 style="font-size: 24px; margin-top: 15px;">Math Course</h2>
+                    <p style="font-size: 18px;">Learn mathematics in an easy and simplified way with the best instructors.</p>
+                </div>
+                <div class="course-box" style="width: 22%; background-color: #081933; color: aliceblue; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+                    <img src="./english.png" alt="English Course" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                    <h2 style="font-size: 24px; margin-top: 15px;">English Course</h2>
+                    <p style="font-size: 18px;">Master the English language with interactive courses and practical exercises.</p>
+                </div>
+                <div class="course-box" style="width: 22%; background-color: #081933; color: aliceblue; padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+                    <img src="./science.png" alt="Science Course" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px;">
+                    <h2 style="font-size: 24px; margin-top: 15px;">Science Course</h2>
+                    <p style="font-size: 18px;">Explore the world of science through fun experiments and new knowledge.</p>
+                </div>
+            </div>
+            
+            </div>
+            
+            
+            <div id="courseDetails" class="col-12 d-flex flex-column align-items-center" ></div> 
+        </div>
+        
+        
+        <script src="./mainJS.js"></script>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>جميع الحقوق محفوظة &copy; 2024</p>
+            
+            <div class="footer-links">
+                <a href="#">سياسة الخصوصية</a> | 
+                <a href="#">الشروط والأحكام</a> | 
+                <a href="#">اتصل بنا</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <div class="contact-info">
+                <p>العنوان: شارع الجميل، قنا، مصر</p>
+                <p>البريد الإلكتروني: <a href="mailto:info@martina.com">info@example.com</a></p>
+                <p>الهاتف: +123 456 7890</p>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+</html>
+
+

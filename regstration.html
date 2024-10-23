@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            height: 300px;
+            width: 400px;
+            border-radius: 20px;
+            text-align: center;
+            margin:auto ;
+            padding-top: 30px;
+            background-image: linear-gradient(to top, #2f4463, #727c8b, #cad2dd) ;
+        }
+        form input{
+            background-color: #cad2dd;
+            border-radius: 10px;
+            border: none;
+            color: aliceblue;
+            font-size: larger;
+            font-weight: bolder;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="your name" name="usr name"><br><br>
+        <input onchange="passValidation(event)" type="password" placeholder="password" name="password"><br>
+        <p id="Ppass"></p>
+        <input onchange="emailValidation(event)" placeholder="email" type="email" name="email"><br>
+        <p id="Pemail"></p>
+        <label for="">Remember me</label>
+        <input type="checkbox"><br>
+        <input type="datetime-local"><br><br>
+        <input onclick="login()" type="submit" value="login">
+    </form>
+    <script src="./formJS.js"></script>
+</body>
+</html>

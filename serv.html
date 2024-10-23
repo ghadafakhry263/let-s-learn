@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .services-section {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 50px;
+            color: #081933;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .service-description {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .services-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .testimonial-section {
+            background-color: #081933;
+            color: aliceblue;
+            padding: 50px 0;
+        }
+
+        .testimonial-card {
+            background-color: #333;
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #f1c40f;
+            font-style: italic;
+        }
+
+        .social-share {
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            color: #f1c40f;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            color: #ffd700; 
+        }
+
+    </style>
+    <title>Our Services</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fs-5" style="height: 80px; background-color: #081933; color: aliceblue;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container services-container">
+            <div class="row text-center" data-aos="fade-up">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h5 class="service-title">Web Development</h5>
+                            <p class="service-description">We offer top-notch web development services tailored to your needs.</p>
+                            <button class="btn btn-outline-primary" onclick="showDetails('Web Development')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <h5 class="service-title">Online Courses</h5>
+                            <p class="service-description">Access a wide range of courses to improve your skills and knowledge.</p>
+                            <button class="btn btn-outline-primary" onclick="showDetails('Online Courses')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <div class="service-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h5 class="service-title">24/7 Support</h5>
+                            <p class="service-description">Our support team is available 24/7 to assist you with any inquiries.</p>
+                            <button class="btn btn-outline-primary" onclick="showDetails('24/7 Support')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="row text-center">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card testimonial-card">
+                        <p>"The best web development services I've ever used. Highly recommend!"</p>
+                        <small>- John Doe</small>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card testimonial-card">
+                        <p>"Amazing online courses with great support. A++."</p>
+                        <small>- Jane Smith</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Share Section -->
+    <section class="text-center social-share">
+        <p>Share our services:</p>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #081933; color: aliceblue; text-align: center; padding: 20px;">
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function showDetails(serviceName) {
+            alert("More details about " + serviceName + " will be added soon.");
+        }
+    </script>
+</body>
+</html>
